@@ -1,6 +1,7 @@
 package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
+
     public int getTotal() {
         return total;
     }
@@ -10,6 +11,8 @@ public class DefaultCountingOutRhymer {
     private static final int DEFAULT_VALUE = -1;
 
     private int total = -1;
+
+    private int[] numbers = new int[MAX_SIZE];
 
     public void countIn(int in) {
         if (!isFull())
